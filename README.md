@@ -14,3 +14,20 @@ Entre los objetivos específicos se encuentran: diseñar un módulo de CRM compl
 
 La relevancia de este sistema radica en su capacidad para transformar procesos tradicionales basados en papel o sistemas fragmentados en una solución digital unificada, contribuyendo a la reducción de costos operativos y al incremento de la satisfacción del cliente. Este documento presenta el desarrollo completo del sistema, desde su análisis y diseño hasta su implementación y pruebas.
 
+
+Conclusiones
+
+La implementación del Sistema Integral de Gestión de Clientes, Servicios y Reservas ha demostrado ser una herramienta efectiva para la modernización de la gestión empresarial en el sector servicios. 
+
+A lo largo del proyecto se logró integrar satisfactoriamente los módulos de clientes, servicios y reservas, permitiendo una administración centralizada y en tiempo real que reduce significativamente los tiempos de respuesta y minimiza errores humanos.
+
+Entre los principales logros se destacan: la mejora en la experiencia del usuario final mediante interfaces intuitivas, la generación automática de reportes analíticos que facilitan la toma de decisiones, y la escalabilidad del sistema que permite su adaptación a diferentes tamaños de negocio.
+
+ Asimismo, se garantizó el cumplimiento de estándares de seguridad y protección de datos, aspecto crítico en aplicaciones que manejan información sensible.
+
+Este proyecto confirma que la adopción de sistemas integrados representa una ventaja competitiva clara en mercados cada vez más digitalizados.
+
+ No obstante, se identifican áreas de mejora futuras, tales como la incorporación de inteligencia artificial para recomendaciones personalizadas, la integración con plataformas de pago en línea y la versión móvil nativa para mayor accesibilidad.
+
+En conclusión, el Sistema Integral desarrollado cumple con los objetivos planteados y representa un aporte significativo para la digitalización de las pequeñas y medianas empresas del sector servicios, sentando las bases para futuras expansiones y actualizaciones
+
