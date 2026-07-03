@@ -129,3 +129,68 @@ class ReservaSala(Servicio):
     
     def describir(self) -> str:
         return f"{super().describir()} - Capacidad: {self.capacidad} personas"
+
+class AlquilerEquipo(Servicio):
+    """Servicio de alquiler de equipos."""
+    
+    def __init__(self, id_servicio: str, nombre: str, precio_base: float, tipo_equipo: str):
+        super().__init__(id_servicio, nombre, precio_base)
+        self.tipo_equipo = tipo_equipo
+    
+    def calcular_costo(self, duracion: float, cantidad: int = 1, **kwargs) -> float:
+        if duracion <= 0 or cantidad <= 0:
+            raise DatosInvalidosError("Duración y cantidad deben ser positivas")
+        costo = self.precio_base * duracion * cantidad
+        if kwargs.get('seguro', False):
+            costo *= 1.1
+        return round(costo, 2)
+    
+    def describir(self) -> str:
+        return f"{super().describir()} - Equipo: {self.tipo_equipo}"
+
+class AsesoriaEspecializada(Servicio):
+    """Servicio de asesoría especializada."""
+    
+    def __init__(self, id_servicio: str, nombre: str, precio_base: float, especialidad: str):
+        super().__init__(id_servicio, nombre, precio_base)
+        self.especialidad = especialidad
+    
+    def calcular_costo(self, duracion: float, **kwargs) -> float:
+        if duracion <= 0:
+            raise DatosInvalidosError("Duración debe ser positiva")
+        costo = self.precio_base * duracion
+        descuento = kwargs.get('descuento', 0)
+        if 0 < descuento <= 100:
+            costo *= (1 - descuento / 100)
+        return round(costo, 2)
+    
+    def describir(self) -> str:
+        return f"{super().describir()} - Especialidad: {self.especialidad}"
+
+# Clase Reserva
+class Reserva:
+    """Clase para gestionar reservas."""
+    
+    def __init__(self, id_reserva: str, cliente: Cliente, servicio: Servicio, duracion: float, fecha: datetime.date):
+        self._validar_parametros(id_reserva, cliente, servicio, duracion, fecha)
+        self.id_reserva = id_reserva
+        self.cliente = cliente
+        self.servicio = servicio
+        self.duracion = duracion
+        self.fecha = fecha
+        self.estado = "Pendiente"
+        logging.info(f"Reserva creada: {id_reserva} para cliente {cliente.id}")
+    
+    def _validar_parametros(self, id_reserva: str, cliente: Cliente, servicio: Servicio, duracion: float, fecha: datetime.date):
+        if not id_reserva:
+            raise DatosInvalidosError("ID de reserva requerido")
+        if not isinstance(cliente, Cliente) or not isinstance(servicio, Servicio):
+            raise DatosInvalidosError("Cliente y Servicio deben ser instancias válidas")
+        if duracion <= 0:
+            raise DatosInvalidosError("Duración debe ser positiva")
+        if fecha < datetime.date.today():
+            raise ReservaInvalidaError("La fecha no puede ser en el pasado")
+        if not servicio._disponible:
+            raise ServicioNoDisponibleError(f"Servicio {servicio.nombre} no disponible")
+
+
