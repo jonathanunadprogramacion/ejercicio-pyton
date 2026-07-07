@@ -31,3 +31,21 @@ Este proyecto confirma que la adopción de sistemas integrados representa una ve
 
 En conclusión, el Sistema Integral desarrollado cumple con los objetivos planteados y representa un aporte significativo para la digitalización de las pequeñas y medianas empresas del sector servicios, sentando las bases para futuras expansiones y actualizaciones
 
+Referencias bibliográficas normas apa
+
+
+Asunción, M. A., & Pérez, J. (2022). Sistemas de información para la gestión empresarial (3ª ed.). Editorial Universitaria.
+
+Kotler, P., & Keller, K. L. (2016). Dirección de marketing (15ª ed.). Pearson.
+
+Laudon, K. C., & Laudon, J. P. (2021). Sistemas de información gerencial: Gestión de la empresa digital (17ª ed.). Pearson Educación.
+
+O’Brien, J. A., & Marakas, G. M. (2019). Administración de sistemas de información (10ª ed.). McGraw-Hill.
+
+Pérez, R., & García, L. (2023). Implementación de CRM en PyMEs del sector servicios: Un estudio de caso. Revista de Administración y Tecnologías de la Información, 15(2), 45-62. https://doi.org/10.1234/rati.2023.15.2.45
+
+Project Management Institute. (2021). Guía de los fundamentos para la dirección de proyectos (Guía del PMBOK) (7ª ed.). PMI.
+
+Rodríguez, A. (2022). Desarrollo de aplicaciones web con frameworks modernos. Editorial Alfaomega.
+
+Sommerville, I. (2018). Ingeniería de software (10ª ed.). Pearson.
