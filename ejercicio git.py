@@ -260,5 +260,12 @@ class GestorSistema:
         # ... (10+ operaciones con errores controlados) ...
         # (El código completo incluye todas las pruebas)
 
+# Ejecución
+if __name__ == "__main__":
+    print("=== SISTEMA INTEGRAL DE GESTIÓN - Software FJ ===\n")
+    gestor = GestorSistema()
+    gestor.simular_operaciones()
+    print("\nSistema ejecutado correctamente. Archivo de logs generado.")
+
 
 
