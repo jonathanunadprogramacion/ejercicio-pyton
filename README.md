@@ -1,3 +1,38 @@
+	Portada
+
+
+Universidad Nacional Abierta y a Distancia 
+
+
+
+
+Vicerrectoría Académica y de Investigación
+
+
+
+Guía de aprendizaje para el desarrollo del componente práctico del curso
+
+
+
+
+
+Programación 213023
+
+
+
+
+
+
+Estudiante: Jonathan andres Ortiz bustos 
+
+
+
+
+
+
+
+
+
 Introducción
 
 En la actualidad, las empresas del sector servicios enfrentan un entorno altamente competitivo donde la eficiencia operativa, la personalización de la atención al cliente y la optimización de los procesos de reserva son factores clave para su supervivencia y crecimiento. 
